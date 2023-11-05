@@ -11,6 +11,11 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
+
+
 
 /* HEADER */
 header{
@@ -45,5 +50,70 @@ header{
     font-size: small;
     margin-left: 5px;
     padding-top: 2px;
+}
 
+
+/* MAIN */
+main{
+    background-color: black;
+    height: calc((100vh - 100px));
+    overflow: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.main-container{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.cameras{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.cameras > .photo{
+    width: 300px;
+    height: 200px;
+    background-image: url(../img/snowboard.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+}
+
+.photo{
+    position: relative;
+    z-index: 1;
+}
+
+.hover{
+    position: absolute;
+    height: 20px;
+    width: 130px;
+    bottom: 0;
+}
+
+.microphone{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    height: 20px;
+    width: 25px; 
+    bottom: 0;
+    text-align: center;
+    z-index: 2;
+}
+
+.user-name{
+    bottom: 0; 
+    width: 90px;
+    height: 20px; 
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    left: 25px;
+    z-index: 2;
+    position: absolute;
+    font-size: 15px;
+    text-align: center;
 }
